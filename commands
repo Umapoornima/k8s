@@ -1,0 +1,16 @@
+kubectl get nodes
+kubeadm init
+kubeadm token create --print-join-command
+kubectl get pods
+kubectl run pod1 --image=centos
+kubectl run pod2 --image=nginx
+kubectl describe pods pod-name - to get detailed description of pod,based on which image pod will be created, to get image id,pod state
+kubectl get pods -o wide - to get detailed description of pod,container ip,which node pod will be running
+kubectl get pods -o wide --all-namespaces
+kubectl delete pod pod-name
+kubectl get namespaces
+kubectl create ns myapp
+kubectl get pods -ns myapp
+kubectl describe pod pod2 -ns myapp
+kubectl delete ns myapp
+
