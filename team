@@ -1,0 +1,19 @@
+yum install git -y
+git --version
+git init
+git config --global user.name ""
+git config --global user.email ""
+git status
+git branch
+git branch -a
+git add .
+git commit -m "added new file"
+git log
+git log -p
+git clone {url}
+git push
+git push --set-upstream origin b1
+git branch poornima
+git branch -d poornima
+git switch poornima
+
